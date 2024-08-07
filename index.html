@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Smart Login System</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Enter your email</label>
+                <input type="email" class="form-control" id="emailLoginInput" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" class="form-control" id="passwordLoginInput" placeholder="Enter your password" required>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="loginBtn">Login</button>
+            <div class="mt-3">
+                <a href="#" id="signUpLink">Don't have an account? Sign Up</a>
+            </div>
+            <p id="alertMessage" class="d-none"></p>
+        </form>
+        <form id="signUpForm" style="display: none;">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="signUpName">Enter your name</label>
+                <input type="text" class="form-control" id="userNameInput" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signUpEmail">Enter your email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="signUpPassword">Enter your password</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password" required>
+            </div>
+            <button type="button" class="btn btn-success btn-block" id="signUpBtn">Sign Up</button>
+            <div class="mt-3">
+                <a href="#" id="loginLink">Already have an account? Login</a>
+            </div>
+            <p id="alertMessageSignUp" class="d-none"></p>
+        </form>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
